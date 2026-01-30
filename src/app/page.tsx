@@ -45,13 +45,13 @@ import {
 // ═══════════════════════════════════════════════════════════════
 const fadeInUp = {
   hidden: { opacity: 0, y: 40 },
-  visible: { opacity: 1, y: 0, transition: { duration: 0.8, ease: "easeOut" } }
-};
+  visible: { opacity: 1, y: 0, transition: { duration: 0.8 } }
+} as const;
 
 const fadeIn = {
   hidden: { opacity: 0 },
-  visible: { opacity: 1, transition: { duration: 0.6, ease: "easeOut" } }
-};
+  visible: { opacity: 1, transition: { duration: 0.6 } }
+} as const;
 
 const staggerContainer = {
   hidden: { opacity: 0 },
@@ -59,7 +59,7 @@ const staggerContainer = {
     opacity: 1,
     transition: { staggerChildren: 0.1, delayChildren: 0.1 }
   }
-};
+} as const;
 
 const scaleIn = {
   hidden: { opacity: 0, scale: 0.95 },
