@@ -454,9 +454,7 @@ export default function CatalogPage() {
                           </div>
                           
                           <div className="absolute top-3 right-3">
-                            {diamond.certType !== 'None' && (
-                              <Badge variant="dark" size="sm">{diamond.certType}</Badge>
-                            )}
+                            <Badge variant="dark" size="sm">{diamond.certType}</Badge>
                           </div>
 
                           {/* Hover Overlay */}

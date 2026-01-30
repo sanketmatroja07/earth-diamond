@@ -146,9 +146,7 @@ export function ProductDetailModal() {
               <Badge variant={diamond.availability === 'In Stock' ? 'success' : 'warning'}>
                 {diamond.availability}
               </Badge>
-              {diamond.certType !== 'None' && (
-                <Badge variant="gold">{diamond.certType} Certified</Badge>
-              )}
+              <Badge variant="gold">{diamond.certType} Certified</Badge>
             </div>
             <h2 className="text-2xl font-[var(--font-heading)] text-[var(--text-primary)] mb-1">
               {diamond.id}
@@ -266,7 +264,7 @@ export function ProductDetailModal() {
           </Button>
 
           {/* Certificate Link */}
-          {diamond.certType !== 'None' && diamond.certNumber && (
+          {diamond.certNumber && (
             <button
               onClick={() => {
                 closeModal();
