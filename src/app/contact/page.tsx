@@ -226,8 +226,8 @@ export default function ContactPage() {
                   Get instant responses during business hours.
                 </p>
                 <Button 
-                  variant="whatsapp" 
-                  className="w-full"
+                  variant="primary" 
+                  className="w-full !bg-[#25D366] hover:!bg-[#128C7E]"
                   onClick={() => openModal('whatsapp')}
                   leftIcon={<MessageCircle size={18} />}
                 >
