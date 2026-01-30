@@ -102,8 +102,8 @@ export function WhatsAppModal() {
             {copied ? 'Copied!' : 'Copy Message'}
           </Button>
           <Button
-            variant="whatsapp"
-            className="flex-1"
+            variant="primary"
+            className="flex-1 !bg-[#25D366] hover:!bg-[#128C7E]"
             onClick={handleOpenWhatsApp}
             rightIcon={<ExternalLink size={18} />}
           >
